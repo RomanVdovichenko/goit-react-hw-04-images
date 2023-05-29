@@ -40,11 +40,11 @@ export const ImageGallery = ({ titleImg }) => {
       setStatus('succes');
       if (api.totalHits === 0) {
         setImages([]);
-        toast.error('Sorry...no images found', { theme: 'colored' });
+        toast.error('Sorry... no images found', { theme: 'colored' });
       }
     } catch (error) {
       console.log(error);
-      toast.error('Sorry...no images found', { theme: 'colored' });
+      toast.error('Sorry... no images found', { theme: 'colored' });
     }
   };
 
